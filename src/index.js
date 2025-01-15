@@ -1,8 +1,7 @@
 import { HelloWorld } from './components/HelloWorld';
 
 /**
- * @type {HTMLDivElement}
+ * @type {HTMLElement | null}
  */
 const app = document.getElementById('app');
-app.appendChild(HelloWorld());
-
+app?.appendChild(HelloWorld());
